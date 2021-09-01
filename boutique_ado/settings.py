@@ -46,8 +46,9 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+    'profiles',
 
-    #others
+    # Others
     'crispy_forms',
 ]
 
@@ -75,7 +76,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #dont remove this
+                'django.template.context_processors.request',  # dont remove this
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
