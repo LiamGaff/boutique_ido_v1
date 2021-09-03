@@ -7,6 +7,9 @@ from checkout.webhook_handler import StripeWH_Handler
 
 import stripe
 
+if os.path.exists("env.py"):
+    import env
+
 
 @require_POST
 @csrf_exempt

@@ -16,6 +16,9 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+if os.path.exists("env.py"):
+    import env
+
 
 @require_POST
 def cache_checkout_data(request):
